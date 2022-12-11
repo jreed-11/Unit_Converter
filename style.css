@@ -23,6 +23,7 @@ html {
 
 body {
   background-color: #F4F4F4;
+  border-radius: 2px;
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
   width: 55rem;
@@ -58,6 +59,8 @@ body {
 input:focus {
   outline:none;
 }
+
+
 
 #convert__btn {
   border: none;
