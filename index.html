@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     <title>Metric/Imperial Unit Conversion</title>
   </head>
   <body>
     <div id="header-section">
-      <h1 class="heading"></h1>
-      <input id="num__input" type="number" />
-      <button id="convert__btn"></button>
+      <h1 class="heading">Metric/Imperial Unit Conversion</h1>
+      <input id="num__input" type="text" value="0" min="0" minlength="0" inputmode="numeric"/>
+      <button id="convert__btn">Convert</button>
     </div>
-    <div id="conversion-section">
-      <h2 id="unit__heading"></h2>
-      <p class="length" id="output__length"></p>
-    </div>
-    </div>
-    <div id="conversion-section">
-      <h2 id="unit__heading"></h2>
-      <p class="volume" id="volume__length"></p>
-    </div>
-    <div id="conversion-section">
-      <h2 id="unit__heading"></h2>
-      <p class="mass" id="mass__length"></p>
+
+    <div id="unit-section">
+      <div id="conversion__section">
+        <h2 id="unit__heading">Length (Meter/Feet)</h2>
+        <p class="length" id="output__length"></p>
+      </div>
+      <div id="conversion__section">
+        <h2 id="unit__heading">Volume (Litres/Gallons)</h2>
+        <p class="volume" id="volume__length"></p>
+      </div>
+      <div id="conversion__section">
+        <h2 id="unit__heading">Mass (Kilograns/Pounds)</h2>
+        <p class="mass" id="mass__length"></p>
+      </div>
+      </div>
     </div>
   </body>
   <script src="index.js"></script>
