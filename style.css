@@ -16,7 +16,9 @@
 
 
 html {
-  background-color: black;
+  background: rgb(7,89,133);
+  background: linear-gradient(225deg, rgba(7,89,133,1) 34%, rgba(14,165,233,1) 61%, rgba(3,105,161,1) 87%);
+  height: 100%;
   /* font size: default 10px */
   font-size: 62.5%;
 }
@@ -77,6 +79,15 @@ input::-webkit-inner-spin-button {
   margin-bottom: 3.5rem;
 }
 
+#convert__btn {
+  cursor: pointer;
+}
+
+#convert__btn:hover {
+  box-shadow: 0px 0px 10px 10px;
+  color: #4C1D95;
+}
+
 #unit-section {
   display: flex;
   flex-direction: column;
@@ -98,5 +109,5 @@ input::-webkit-inner-spin-button {
 #unit__heading {
   color: #5A537B;
   font-weight: 600;
-
+  margin-bottom: 1.5rem;
 }
